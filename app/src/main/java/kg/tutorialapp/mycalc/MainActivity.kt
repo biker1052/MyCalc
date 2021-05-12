@@ -3,6 +3,7 @@ package kg.tutorialapp.mycalc
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Window
 import android.widget.Button
 import android.widget.TextView
 import net.objecthunter.exp4j.ExpressionBuilder
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
         mathOperation = findViewById(R.id.mathOperation)
         result = findViewById(R.id.result)
         bt1 = findViewById(R.id.bt1)
